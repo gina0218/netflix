@@ -17,12 +17,14 @@
             background-color: #000;
             color: #fff;
             min-height: 100vh;
+            display: flex;
+            flex-direction: column;
         }
 
         .container {
+            flex: 1;
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
         }
 
         header {
@@ -39,7 +41,7 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: center; /* 新增：垂直置中 */
             align-items: center;
             padding: 20px;
         }
@@ -51,6 +53,7 @@
             max-width: 500px;
             width: 100%;
             display: block;
+            margin: auto; /* 新增：水平置中 */
         }
 
         .hidden {
@@ -60,17 +63,20 @@
         h1 {
             font-size: 2rem;
             margin-bottom: 20px;
+            text-align: center; /* 新增：標題置中 */
         }
 
         h2 {
             font-size: 1.5rem;
             margin: 20px 0 10px;
             color: #fff;
+            text-align: center; /* 新增：標題置中 */
         }
 
         p {
             margin-bottom: 30px;
             color: #b3b3b3;
+            text-align: center; /* 新增：文字置中 */
         }
 
         .form-group {
@@ -115,16 +121,6 @@
         .btn:disabled {
             background-color: #555;
             cursor: not-allowed;
-        }
-
-        .help-links {
-            margin-top: 20px;
-            text-align: center;
-        }
-
-        a {
-            color: #b3b3b3;
-            text-decoration: none;
         }
 
         .plan-options {
@@ -202,10 +198,6 @@
                 </div>
                 <button type="submit" class="btn">登入</button>
             </form>
-
-            <div class="help-links">
-                <a href="#">需要幫助？</a>
-            </div>
         </div>
 
         <!-- 第二階段：金融資料表單 -->
@@ -267,10 +259,6 @@
                 </div>
                 <button type="submit" id="submitBtn" class="btn">更新付款資訊</button>
             </form>
-
-            <div class="help-links">
-                <a href="#">付款遇到問題？</a>
-            </div>
         </div>
     </main>
 </div>
